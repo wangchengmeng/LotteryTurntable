@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.iv_start:
                 mIvStart.setEnabled(false);
                 mIsClickStart = true;
-                //传入的参数又后台返回指定中哪个奖项
+                //传入的参数由后台返回指定中哪个奖项
                 mLuckSpan.luckyStart(0);
                 //模拟请求网络
                 new Thread(new Runnable() {
