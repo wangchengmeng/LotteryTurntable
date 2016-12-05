@@ -247,8 +247,8 @@ public class LuckSpan extends SurfaceView implements SurfaceHolder.Callback, Run
         float end = from + angle;
 
         //设置需要停下来的时候转动的距离  保证每次不停留的某个index下的同一个位置
-        float targetFrom = 4 * CIRCLE_ANGLE + from;
-        float targetEnd = 4 * CIRCLE_ANGLE + end;//最终停下来的位置在from-end之间，4 * CIRCLE_ANGLE 自定义要多转几圈
+        float targetFrom = 3 * CIRCLE_ANGLE + from;
+        float targetEnd = 3 * CIRCLE_ANGLE + end;//最终停下来的位置在from-end之间，4 * CIRCLE_ANGLE 自定义要多转几圈
 
         //计算要停留下来的时候速度的范围
         float vFrom = (float) ((Math.sqrt(1 + 8 * targetFrom) - 1) / 2);
